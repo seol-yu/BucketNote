@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+:root {
+  /* Color */
+  --color-blue: #355C7D;
+  --color-dark-pink: #C06C84;
+  --color-pink: #F96C94;
+  --color-light-pink: #FFD6E2;
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  /* Font size */
+  --font-medium: 48px;
+  --font-regular: 36px;
+  --font-small: 32px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'SeoulHangangM';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/SeoulHangangM.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'NanumSquareRound';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/NanumSquareRound.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.App-header {
-  background-color: #282c34;
+* {
+  box-sizing: border-box;
+}
+
+html {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+body {
+  font-family: 'SeoulHangangM';
+  background: rgb(53, 92, 125);
+  background: linear-gradient(38deg, rgba(53, 92, 125, 1) 0%, rgba(192, 108, 132, 1) 100%) no-repeat;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+  text-decoration: none;
+  color: var(--color-white);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 0;
 }

@@ -1,7 +1,11 @@
 import "./app.css";
 
 function App() {
-  return <h1>:)</h1>;
+  return (
+    <>
+      <p>나의 프로젝트</p>
+    </>
+  );
 }
 
 export default App;
