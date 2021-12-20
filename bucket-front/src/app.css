@@ -37,9 +37,9 @@ html {
 
 body {
   font-family: 'SeoulHangangM';
-  background: rgb(53, 92, 125);
-  background: linear-gradient(38deg, rgba(53, 92, 125, 1) 0%, rgba(192, 108, 132, 1) 100%) no-repeat;
-  color: white;
+  background: var(--color-blue);
+  background: linear-gradient(38deg, var(--color-blue) 0%, var(--color-dark-pink) 100%) no-repeat;
+  color: var(--color-white);
 }
 
 a {
@@ -61,4 +61,62 @@ button {
   border: none;
   outline: none;
   padding: 0;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-white);
+  padding: 20px 50px;
+  white-space: nowrap;
+}
+
+.header_logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-medium);
+}
+
+.header_logo img {
+  width: 132px;
+  height: 101px;
+}
+
+.header_logo span {
+  margin-left: 10px;
+}
+
+.search_input {
+  width: 504px;
+  height: 92px;
+  border: 1px solid var(--color-light-pink);
+  border-radius: 46px;
+  background-color: transparent;
+}
+
+.search_input img {
+  width: 75px;
+  height: 69px;
+  position: relative;
+  top: 50%;
+  left: 12%;
+  transform: translate(-50%, -50%);
+}
+
+.header_userInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header_userInfo img {
+  width: 89px;
+  height: 89px;
+}
+
+.header_userInfo span {
+  margin-left: 10px;
+  font-size: var(--font-medium);
 }

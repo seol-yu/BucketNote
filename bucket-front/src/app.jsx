@@ -1,10 +1,16 @@
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./app.css";
+import Intro from "./pages/Intro";
+import Header from "./components/Header";
 
 function App() {
   return (
-    <>
-      <p>나의 프로젝트</p>
-    </>
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Intro />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
