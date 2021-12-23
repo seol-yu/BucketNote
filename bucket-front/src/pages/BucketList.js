@@ -1,5 +1,4 @@
 import { Outlet } from "react-router-dom";
-import MyBucketLists from "../components/MyBucketLists";
 
 const BucketList = () => {
   return (

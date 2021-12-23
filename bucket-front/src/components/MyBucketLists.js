@@ -32,7 +32,7 @@ const MyBucketlists = () => {
       wish: `구글 인수하기`,
     },
     {
-      id: 7,
+      id: 8,
       wish: `마이크로소프트 인수하기`,
     },
   ];

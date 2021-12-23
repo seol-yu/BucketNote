@@ -5,6 +5,7 @@ import Header from "./components/Header";
 import DeathMode from "./components/DeathMode";
 import BucketList from "./pages/BucketList";
 import MyBucketLists from "./components/MyBucketLists";
+import MyBucketListWrite from "./components/MyBucketListWrite";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/" element={<Intro />} />
         <Route path="/bucketlist" element={<BucketList />}>
           <Route path="mybucketlists" element={<MyBucketLists />} />
+          <Route path="mybucketlistwrite" element={<MyBucketListWrite />} />
         </Route>
       </Routes>
       <DeathMode />
